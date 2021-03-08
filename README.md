@@ -15,5 +15,5 @@ Resampling of G1 and G12 from SelectionHapStats
 	* First, run the published SelectionHapStats pipeline from Garud et al., 2015, Garud and Petrov 2016, Garud and Rosenberg 2015, and Harris et al., 2018.
 		These scripts can be found at: https://github.com/ngarud/SelectionHapStats 
 	* Then, rank the h12_h2h1.py script output using the rank_g1 or rank_g12 script for g1 and g12 respectively.
-	* Then, resample the output of H12_H2H1.py using either the resample_g1.py or resample_g12.py scripts for g1 and g12 respectively.
+	* Then, resample the output of H12_H2H1.py using either the resample_g1-or-g12.py.
 		Additional requirements: python3 with statistics and random
