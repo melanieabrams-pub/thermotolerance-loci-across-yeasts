@@ -3,13 +3,12 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 '''
-rank selecthapstats h12 outputs by gene
+rank selecthapstats g1 (or h1) outputs by gene
 assuming file name in form: 
-merged_6AfricanBeer_chromosome1.h12
+merged_6AfricanBeer_chromosome1.h12_h1h2
 
 '''
 #Parameters
-#gff='/usr2/people/mabrams/Amended_Genomes/D1373/DBVPG1373.gff'
 gff='/usr2/people/mabrams/Amended_Genomes/S288C/saccharomyces_cerevisiae_R64-1-1_20110208_withoutFasta.gff'
 roman_numerals_in_gff=True
 
@@ -21,8 +20,7 @@ save_prefix=filenames[0].split('_chromosome')[0]
 
 def ParseFromGFF(gfffile):
     '''
-    Parses SGD features flat file
-    Input: SGD_features.tab file
+    Parses gff
     Output: dict of {chrom:{gene:[start,stop]}}
     '''
     roman_to_numerals={

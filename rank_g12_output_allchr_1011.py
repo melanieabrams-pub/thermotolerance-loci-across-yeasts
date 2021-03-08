@@ -3,13 +3,12 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 '''
-rank selecthapstats h12 outputs by gene
+rank selecthapstats g12(or h12) outputs by gene
 assuming file name in form: 
-merged_6AfricanBeer_chromosome1.h12
+merged_6AfricanBeer_chromosome1.h12_h2h1
 
 '''
 #Parameters
-#gff='/usr2/people/mabrams/Amended_Genomes/D1373/DBVPG1373.gff'
 gff='/usr2/people/mabrams/Amended_Genomes/S288C/saccharomyces_cerevisiae_R64-1-1_20110208_withoutFasta.gff'
 roman_numerals_in_gff=True
 
