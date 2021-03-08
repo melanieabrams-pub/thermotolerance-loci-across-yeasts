@@ -108,12 +108,6 @@ def rankGenes(ann_dict, chrom_dict):
             stop=ann_dict[chrom][gene][1]
             for i in range(len(pos_list)):
                 if start<pos_list[i]<stop:
-##                    if gene=="YAL056W":
-##                        print(gene)
-##                        print("H12 list")
-##                        print(H12_list[i])
-##                        print("H2/H1 ratios")
-##                        print(ratio_H2H1_list[i])
                     G1s.append(G1_list[i])
                     
 
