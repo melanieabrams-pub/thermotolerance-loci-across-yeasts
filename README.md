@@ -19,3 +19,6 @@ Resampling of G1 from SelectionHapStats
 	* Then, rank the h12_h2h1.py script output using the rank_g1 script.
 	* Then, resample the output of H12_H2H1.py using  the resample_g1 script.
 		Additional requirements: python3 with statistics and random
+
+Resampling of ASE from Tirosh et al., 2009 and Li and Fay et al., 2017:
+	* Run the respective resample_ase script on formatted ASE data
