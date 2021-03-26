@@ -21,4 +21,6 @@ Resampling of G1 from SelectionHapStats
 		Additional requirements: python3 with statistics and random
 
 Resampling of ASE from Tirosh et al., 2009 and Li and Fay et al., 2017:
-	* Run the respective resample_ase script on formatted ASE data
+	* Run the respective dataset resample_ase script on formatted ASE data:
+		Overall for resampling overall expression differences 
+		Directional for resampling upregulation or downregulation
