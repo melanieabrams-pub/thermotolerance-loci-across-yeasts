@@ -160,8 +160,7 @@ def resample(goi,log2_sc_sp_dict, essential_genes, n_resample=10000):
         if abs(random_median)>=abs(my_median): #absolute values of medians - larger than OR smaller than random samples  
             greater_medians+=1
 
-    rv= greater_medians/float(n_resample)
-    p = 2*rv #two-sided test
+    rv=greater_medians/float(n_resample)
     print('rv: '+str(rv))
     print('n_resample: '+str(n_resample))
     print('median random median: ' +str(median(random_medians))+', goi median: '+str(my_median))
@@ -171,7 +170,7 @@ def resample(goi,log2_sc_sp_dict, essential_genes, n_resample=10000):
         plt.axvline(x=my_median, color='r', label = 'GOI median')
         plt.xlabel('Sample medians')
         plt.ylabel('Frequency')
-        plt.title(savename+'\nresampling distribution, two-sided p= ' + str(p))
+        plt.title(savename+'\nresampling distribution, p= ' + str(rv))
         #plt.show()
         plt.tight_layout()
         plt.savefig(savename+'.png')
